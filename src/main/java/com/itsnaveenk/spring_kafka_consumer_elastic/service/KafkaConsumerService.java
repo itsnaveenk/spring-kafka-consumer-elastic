@@ -9,8 +9,8 @@ import org.springframework.kafka.annotation.KafkaListener;
 @Service
 public class KafkaConsumerService {
 
-    @KafkaListener(topics = "my_topic", groupId = "my_group_id")
-    public void consume(FoodOrderNotification message) {
-        System.out.println("Consumed message: " + message.toString());
+    @KafkaListener(topics = "foodsOrder", groupId = "springConsumerGroup1")
+    public void consume(FoodOrderNotification foodOrderNotification) {
+        System.out.println("Consumed message: " + foodOrderNotification.toString());
     }
 }
