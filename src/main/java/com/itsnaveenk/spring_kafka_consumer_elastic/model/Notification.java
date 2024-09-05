@@ -1,31 +1,26 @@
 package com.itsnaveenk.spring_kafka_consumer_elastic.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-
 public class Notification {
 
-    private int user_Id;
-
-
+    private int user_id;
     private String message;
-
-    private int recipient_Id;
+    private int recipient_id;
 
     public Notification() {
     }
-    public Notification(int user_Id, String message, int recipient_Id) {
-        this.user_Id = user_Id;
+
+    public Notification(int user_id, String message, int recipient_id) {
+        this.user_id = user_id;
         this.message = message;
-        this.recipient_Id = recipient_Id;
+        this.recipient_id = recipient_id;
     }
 
-    public int getUser_Id() {
-        return user_Id;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public void setUser_Id(int user_Id) {
-        this.user_Id = user_Id;
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 
     public String getMessage() {
@@ -36,20 +31,20 @@ public class Notification {
         this.message = message;
     }
 
-    public int getRecipient_Id() {
-        return recipient_Id;
+    public int getRecipient_id() {
+        return recipient_id;
     }
 
-    public void setRecipient_Id(int recipient_Id) {
-        this.recipient_Id = recipient_Id;
+    public void setRecipient_id(int recipient_id) {
+        this.recipient_id = recipient_id;
     }
 
     @Override
     public String toString() {
         return "Notification{" +
-                "user_Id=" + user_Id +
+                "user_id=" + user_id +
                 ", message='" + message + '\'' +
-                ", recipient_Id=" + recipient_Id +
+                ", recipient_id=" + recipient_id +
                 '}';
     }
 }

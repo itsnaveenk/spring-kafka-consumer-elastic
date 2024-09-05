@@ -12,5 +12,4 @@ public class KafkaConsumerService {
         System.out.println("Received notification: " + notification);
         // Process the notification
     }
-
 }
